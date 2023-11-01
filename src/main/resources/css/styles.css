@@ -1,0 +1,21 @@
+.title {
+    -fx-font-weight: 900;
+    -fx-padding: 10px;
+    -fx-font-size: 18pt;
+}
+
+.primary {
+    -fx-background-color: #f58733;
+    -fx-margin: 7px;
+    -fx-padding: 7px;
+}
+
+.secondary {
+    -fx-background-color: #c1d7aa;
+    -fx-margin: 7px;
+    -fx-padding: 7px;
+}
+
+.main {
+    -fx-background-color: linear-gradient(to bottom right, #CCCCFF, #EEEEFF);
+}

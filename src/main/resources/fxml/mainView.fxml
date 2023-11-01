@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="400.0" spacing="15.0" stylesheets="@../css/styles.css" styleClass="main" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.MainViewController">
+   <children>
+       <Label alignment="CENTER" maxWidth="600" minWidth="300" styleClass="title" text="Calculator" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+       </Label>
+      <TextField fx:id="resultField" alignment="CENTER_RIGHT" editable="false" prefHeight="75.0" prefWidth="400.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </VBox.margin>
+      </TextField>
+      <GridPane alignment="CENTER" prefHeight="200.0" prefWidth="400.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="80.0" minWidth="40.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="80.0" minWidth="40.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="80.0" minWidth="40.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="80.0" minWidth="40.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="20.0" prefHeight="40.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="20.0" prefHeight="40.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="20.0" prefHeight="40.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="20.0" prefHeight="40.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="20.0" prefHeight="40.0" vgrow="ALWAYS" />
+        </rowConstraints>
+          <children>
+            <Button mnemonicParsing="false" onAction="#buttonClear" prefWidth="60.0" styleClass="secondary" text="C">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#buttonClearAll" prefWidth="60.0" styleClass="secondary" text="CE" GridPane.columnIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#buttonMod" prefWidth="60.0" styleClass="secondary" text="Mod" GridPane.columnIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#buttonDiv" prefWidth="60.0" styleClass="secondary" text="Div" GridPane.columnIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+
+            <Button mnemonicParsing="false" onAction="#button1" prefWidth="60.0" styleClass="primary" text="1" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#button2" prefWidth="60.0" styleClass="primary" text="2" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#button3" prefWidth="60.0" styleClass="primary" text="3" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#buttonMultiply" prefWidth="60.0" styleClass="secondary" text="X" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+
+            <Button mnemonicParsing="false" onAction="#button4" prefWidth="60.0" styleClass="primary" text="4" GridPane.rowIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#button5" prefWidth="60.0" styleClass="primary" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#button6" prefWidth="60.0" styleClass="primary" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#buttonMinus" prefWidth="60.0" styleClass="secondary" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+
+            <Button mnemonicParsing="false" onAction="#button7" prefWidth="60.0" styleClass="primary" text="7" GridPane.rowIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#button8" prefWidth="60.0" styleClass="primary" text="8" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#button9" prefWidth="60.0" styleClass="primary" text="9" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#buttonPlus" prefWidth="60.0" styleClass="secondary" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+
+            <Button mnemonicParsing="false" onAction="#buttonDot" prefWidth="60.0" styleClass="secondary" text="." GridPane.rowIndex="4">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#button0" prefWidth="60.0" styleClass="primary" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#buttonDivide" prefWidth="60.0" styleClass="secondary" text="/" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#buttonCalculate" prefWidth="60.0" styleClass="secondary" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </GridPane>
+   </children>
+</VBox>
